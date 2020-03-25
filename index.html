@@ -166,13 +166,19 @@
         </div>
         <hr class="w-50 border-dark">
         <div class="material p-0 mx-5 my-4">
-          <a href="#" class="text-light btn btn-primary w-100 py-4">
+          <a href="#"
+            class="text-light btn btn-primary w-100 py-4"
+            data-toggle="modal"
+            data-target="#download">
             <span class="fas fa-download mr-4"></span>
             <span class="text-uppercase m-0">Télécharger VCard</span>
           </a>
         </div>
         <div class="material p-0 mx-5 my-4">
-          <a href="#" class="text-light btn btn-dark w-100 py-4">
+          <a href="#"
+            class="text-light btn btn-dark w-100 py-4"
+            data-toggle="modal"
+            data-target="#share">
             <span class="fas fa-share-alt mr-4"></span>
             <span class="text-uppercase m-0">Partager cette page</span>
           </a>
@@ -180,8 +186,92 @@
       </main>
     </div>
     <footer class="text-center text-light mt-4">
-      <p>Copyright &copy; 2020 - Tous droits réservés</p>
+    <p>Copyright &copy; 2020 - Tous droits réservés</p>
     </footer>
+
+    <!-- Modal - Download -->
+    <div class="modal fade" id="download" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Enregistrez les données
+            </h5>
+            <button type="button" class="close"
+              data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Comment souhaitez-vous enregistrer les coordonnées ?</p>
+            <div class="material p-0 my-4">
+              <a href="./vincent_cesarole.vcf"
+              class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fas fa-download mr-4"></span>
+                <span class="m-0">Enregistrer sur mon appareil</span>
+              </a>
+            </div>
+            <div class="material p-0 my-4">
+              <a href="#"
+                class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fas fa-paper-plane mr-4"></span>
+                <span class="m-0">Envoyer par e-mail</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Share -->
+    <div class="modal fade" id="share" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-uppercase"
+              id="exampleModalLabel">
+              Partager
+            </h5>
+            <button type="button" class="close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="material p-0 my-4">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//url-de-la-page"
+                class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fab fa-facebook mr-4"></span>
+                <span class="m-0">Facebook</span>
+              </a>
+            </div>
+            <div class="material p-0 my-4">
+              <a href="https://twitter.com/intent/tweet?text=VCard%20-%20Vincent%20Cesarole%0Aurl-de-la-page%0A%23developper%20%23dev%20%23software%20%23web"
+                class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fab fa-twitter mr-4"></span>
+                <span class="m-0">Twitter</span>
+              </a>
+            </div>
+            <div class="material p-0 my-4">
+              <a href="https://wa.me/?text=urlencodedtext=VCard%20-%20Vincent%20Cesarole%0Aurl-de-la-page%0A%23developper%20%23dev%20%23software%20%23web"
+                class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fab fa-whatsapp mr-4"></span>
+                <span class="m-0">Whatsapp</span>
+              </a>
+            </div>
+            <div class="material p-0 my-4">
+              <a href="#"
+                class="text-light text-left btn btn-primary w-100 py-4">
+                <span class="fas fa-paper-plane mr-4"></span>
+                <span class="m-0">E-mail</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- FontAwesome -->
