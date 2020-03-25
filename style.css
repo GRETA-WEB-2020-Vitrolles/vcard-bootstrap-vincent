@@ -1,0 +1,17 @@
+img {
+  max-width: 150px;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.svg-inline--fa:not(.fa-2x) {
+  font-size: 1.5em;
+}
+
+/*
+div {
+  border: 1px solid white;
+}
+*/
